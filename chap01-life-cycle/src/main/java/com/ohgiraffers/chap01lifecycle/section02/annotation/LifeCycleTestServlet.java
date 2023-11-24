@@ -6,7 +6,10 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import java.io.IOException;
-@WebServlet(name = "annotation-servlet", value = "/annotation-lifecycle", loadOnStartup = 1) //웹url은 대문자안씀//숫자가 낮을수록 우선순위
+@WebServlet(name = "annotation-servlet", value = "/annotation-lifecycle", loadOnStartup = 1)
+// WebServlet은 xml파일을 따로 만들지 않아서 더 좋다
+// 웹url은 대문자안씀
+// loadOnStartup 은 숫자가 낮을수록 우선순위
 public class LifeCycleTestServlet extends HttpServlet {
 
     private static final long serialVersionUID =1L;
